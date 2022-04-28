@@ -1,25 +1,4 @@
 import java.util.Scanner;
-public class company{
-	public static void main(String args[])
-	{
-			int n;
-			System.out.println("Enter th eno. of employee:");
-			Scanner sc=new Scanner(System.in);
-			n=sc.nextInt();
-			employee e[]=new employee[n];
-			System.out.println("Enter details of employee");
-			for(int i=0;i<n;i++)
-			{
-				e[i].getdata();
-			}
-			System.out.println(" details of employee");
-			for(int i=0;i<n;i++)
-			{
-				e[i].dis();
-			}
-
-	}
-}
 class employee
 {
 	int eno,esalary;
@@ -40,5 +19,59 @@ class employee
 		System.out.println("Ename:"+ename);
 		System.out.println("Esalary:"+esalary);
 		System.out.println();
+	}
+}
+public class company{
+	public static void main(String args[])
+	{
+			int n;
+			System.out.println("Enter th eno. of employee:");
+			Scanner sc=new Scanner(System.in);
+			n=sc.nextInt();
+			employee e[]=new employee[n];
+			for(int i=0;i<n;i++)
+			{
+				e[i]=new employee();
+			}
+
+			System.out.println("Enter details of employee");
+			for(int i=0;i<n;i++)
+			{
+				e[i].getdata();
+			}
+
+			System.out.println(" details of employee");
+			for(int i=0;i<n;i++)
+			{
+				e[i].dis();
+			}
+
+			System.out.println("Enter the employee number you want search");
+			int se=sc.nextInt();
+			int f=1,l=0;
+			for(int i=0;i<n;i++)
+			{
+				if(e[i].eno==se)
+				{
+					f=0;
+			
+					break;
+				}
+				l++;
+			
+			}
+				if(f==0)
+				{
+					e[l].dis();
+				
+				}
+				else
+				{
+					System.out.println("Employee not present");
+				}			
+			
+
+
+
 	}
 }
