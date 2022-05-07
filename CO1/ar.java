@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Math;
 public class ar{
 public static void main(String args[])
 {
@@ -14,11 +15,13 @@ public static void main(String args[])
 				float r=sc.nextFloat();
 				s.area(r);
 				break;
-		case 2:System.out.println("Enter the breadth");
-				int b=sc.nextInt();
-				System.out.println("Enter the height");
-				int h=sc.nextInt();
-				s.area(b,h);
+		case 2:System.out.println("Enter the side 1");
+				int s1=sc.nextInt();
+				System.out.println("Enter the side 2");
+				int s2=sc.nextInt();
+				System.out.println("Enter the side 3");
+				int s3=sc.nextInt();
+				s.area(s1,s2,s3);
 				break;
 		case 3:System.out.println("Enter the lenght");
 				int l=sc.nextInt();
@@ -46,9 +49,10 @@ class shape{
 	float ar=(float)3.14*a*a;
 	System.out.println("Area of Circle:"+ar);
 	}
-	void area(int b,int h)
+	void area(int a,int b,int c)
 	{
-	float ar=(float).5*b*h;
+	float s=(float)(a+b+c)/2;
+	double ar=Math.sqrt(s*(s-a)*(s-b)*(s-c));
 	System.out.println("Area of Triangle:"+ar);
 	}
 	void area(int l,int b)
