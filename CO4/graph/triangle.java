@@ -1,10 +1,10 @@
 package graphics;
 import java.util.Scanner;
-class triangle implements ap
+public class triangle implements ap
 {
 	Scanner sc=new Scanner(System.in);
 	int b,h;
-	void read()
+	public void read()
 	{
 	System.out.println("Enter the height");
 	h=sc.nextInt();

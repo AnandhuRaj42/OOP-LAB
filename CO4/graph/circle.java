@@ -4,7 +4,7 @@ public class circle implements ap
 {
 	Scanner sc=new Scanner(System.in);
 	float ra;
-	void read()
+	public void read()
 	{
 	System.out.println("Enter the radius");
 	ra=sc.nextFloat();

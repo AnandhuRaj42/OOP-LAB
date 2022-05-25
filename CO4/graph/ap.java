@@ -1,6 +1,5 @@
 package graphics;
-import java.util.Scanner;
-interface ap
+public interface ap
 {
 	public void area();
 } 

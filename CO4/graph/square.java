@@ -1,10 +1,10 @@
 package graphics;
 import java.util.Scanner;
-class square implements ap
+public class square implements ap
 {
 	Scanner sc=new Scanner(System.in);
 	int ra;
-	void read()
+	 public void read()
 	{
 	System.out.println("Enter the side");
 	ra=sc.nextInt();

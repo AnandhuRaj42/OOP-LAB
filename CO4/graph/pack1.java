@@ -1,4 +1,8 @@
-import graphics.*;
+//import graphics.ap;
+import graphics.circle;
+import graphics.square;
+import graphics.triangle;
+import graphics.rect;
 import java.util.Scanner;
 public class pack1{
 	public static void main(String args[])

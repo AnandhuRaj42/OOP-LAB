@@ -1,10 +1,10 @@
 package graphics;
 import java.util.Scanner;
-class rect implements ap
+public class rect implements ap
 {
 	int l,b;
 	Scanner sc=new Scanner(System.in);
-	void read()
+	 public void read()
 	{
 	System.out.println("Enter length and breadth");
 	 l=sc.nextInt();
